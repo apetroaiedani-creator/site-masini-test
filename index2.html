@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Masini</title>
     <style>
+        /* Aici rămâne tot codul CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -13,8 +14,9 @@
         ul li {
             margin-bottom: 15px;
         }
-        img {
+        .desc-image { 
             margin: 15px 0;
+            cursor: pointer; 
         }
         a {
             color: #0066cc;
@@ -23,98 +25,75 @@
         a:hover {
             text-decoration: underline;
         }
+        .description-container {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            display: none; 
+        }
     </style>
 </head>
 <body>
-        <h1>Hello words</h1>
-        <h1>Hello words 2</h1>
-        <h1>Hello words 3</h1>
-        <p>Acesta este un paragraf de test</p>
-        <ul>
-            <li id="zona1">Aici incepe zona 1</li>
-            <li>Element lista 1</li>
-            <li>Element lista 2</li>
-            <li><a href="#Lambo"><span title="Apasa cu incredere pentru a vedea Lamborghini">Te duce la Lamborghini daca dai click</span></a></li>
-        </ul>
-        <img src="BMW_X5.png" width="320" height="200" alt="Imagine masina BMW X5">
-        <ul>
-            <li>Element lista 1</li>
-            <li>Element lista 2</li>
-            <li>Element lista 3</li>
-            <li>Element lista 4</li>
-            <li>Element lista 5</li>
-            <li>Element lista 6</li>
-            <li>Element lista 7</li>
-            <li>Element lista 8</li>
-            <li>Element lista 9</li>
-        </ul>
-        <img src="toyota.png" width="320" height="200" alt="TOYOTA">
-        <ul>
-            <li>Element lista 1</li>
-            <li>Element lista 2</li>
-            <li>Element lista 3</li>
-            <li>Element lista 4</li>
-            <li>Element lista 5</li>
-            <li>Element lista 6</li>
-            <li>Element lista 7</li>
-            <li>Element lista 8</li>
-            <li>Element lista 9</li>
-        </ul>
-        <img src="2017-honda-civic-type-r-red.png" width="320" height="200" alt="HONDA">
-        <button>Click me HONDA!</button>
-        <ul>
-            <li>Element lista 1 &rarr;</li>
-            <li>Element lista 2 &aacute;</li>
-            <li>Element lista 3 &lAarr;</li>
-            <li>Element lista 4</li>
-            <li>Element lista 5</li>
-            <li>Element lista 6</li>
-            <li>Element lista 7</li>
-            <li>Element lista 8</li>
-            <li><span title="Duce la zona 1"><a href="#zona1">Element lista 9</a></span></li>
-            <li>Element lista 10</li>
-        </ul>
-        <footer>
-            <p>Acesta &copy; este un footer de test</p>
-        </footer>
-        <h1>Hello Hyundai i30</h1>
-        <ul>
-            <li>Cai putere 320</li>
-            <li><div title="Da poti vedea">Viteza 200 km/h</div></li>
-            <li>Element lista 3</li>
-            <li>Element lista 4</li>
-            <li>Element lista 5</li>
-            <li>Element lista 6</li>
-            <li>Element lista 7</li>
-            <li>Element lista 8</li>
-            <li>Element lista 9</li>
-            <li><strong>Masina</strong> Pret 35000 euro</li>
-            <li><strong>Consum 6.5 l/100km</strong></li>
-            <li><span title="Istoric ascuns">Hyundai istoric</span></li>
-            <li>Hyundai a fost fondata in anul 1967 in Coreea de Sud.</li>
-            <li>Hyundai este unul dintre cei mai mari producatori de automobile din lume.</li>
-        </ul>
-        <img src="Hyndai.png" width="320" height="200" alt="HYUNDAI">
-        <p><a href="https://www.hyundai-motor.ro/?utm_source=google&utm_medium=cpc&utm_campaign=Search_ongoing_2024_RLSA_Generic&gad_source=1&gad_campaignid=1707659214&gbraid=0AAAAADvlyV0R1lyovT5stZhW7M3su1rYi&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUuhTfPGmsCrzgPWgng1R9r7MUpSFWvfKgzVrl1RITUuGmSLISMNaOxoC0WoQAvD_BwE" target="_blank">Link Hyundai</a></p>
-        <h2 id="Lambo">Aici vezi Lambo</h2>
-        <img src="Lamborghini_Urus.png" alt="LAMBORGHINI" width="320" height="200">
-        <ul>
-            <li>Cai putere</li>
-            <li><strong>Pret 295 000 $</strong> e scump</li>  
-            <li>Element lista 3</li>
-            <li>Element lista 4</li>
-            <li>Element lista 5</li>
-            <li>Element lista 6</li>
-            <li>Element lista 7</li>
-            <li>Element lista 8</li>
-            <li>Element lista 9</li>
-        </ul>
-        <p>
-            <a href="https://www.lamborghini.com/en-en/models/urus/urus-se#val-ht" target="_blank">Link Lamborghini Urus Europa</a>
-            <br/>
-            <a href="https://preowned.lamborghini.com/en_gb/models/lamborghini-urus" target="_blank">Link Lamborghini Urus SUA</a>
-        </p>
-        <h1>Porsche</h1>
-        <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank"><img src="Porsche.png" alt="PORSCHE" width="120" height="200"></a> 
-    </body>
+    <h1>Hello words</h1>
+    <h1>Hello words 2</h1>
+    <h1>Hello words 3</h1>
+    <p>Acesta este un paragraf de test</p>
+    <ul>
+        <li id="zona1">Aici incepe zona 1</li>
+        <li>Element lista 1</li>
+        <li>Element lista 2</li>
+        <li><a href="#Lambo"><span title="Apasa cu incredere pentru a vedea Lamborghini">Te duce la Lamborghini daca dai click</span></a></li>
+    </ul>
+
+    <img src="BMW_X5.png" class="desc-image" width="320" height="200" alt="Imagine masina BMW X5 - SUV de lux, excelent pentru drumuri lungi.">
+    <div class="description-container"></div> 
+
+    <ul>
+        <li>Element lista 1</li>
+        <li>Element lista 2</li>
+    </ul>
+
+    <img src="toyota.png" class="desc-image" width="320" height="200" alt="TOYOTA - Renumită pentru fiabilitate și eficiență.">
+    <div class="description-container"></div> 
+    
+    <ul></ul>
+
+    <img src="2017-honda-civic-type-r-red.png" class="desc-image" width="320" height="200" alt="HONDA Civic Type R - Mașină sport de înaltă performanță.">
+    <div class="description-container"></div> 
+
+    <button>Click me HONDA!</button>
+    
+    <ul></ul>
+    
+    <footer>
+        <p>Acesta &copy; este un footer de test</p>
+    </footer>
+
+    <h1>Hello Hyundai i30</h1>
+    <ul></ul>
+
+    <img src="Hyndai.png" class="desc-image" width="320" height="200" alt="HYUNDAI - O marcă populară, oferind un raport bun calitate-preț.">
+    <div class="description-container"></div> 
+
+    <p><a href="https://www.hyundai-motor.ro/?utm_source=google&utm_medium=cpc&utm_campaign=Search_ongoing_2024_RLSA_Generic&gad_source=1&gad_campaignid=1707659214&gbraid=0AAAAADvlyV0R1lyovT5stZhW7M3su1rYi&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUuhTfPGmsCrzgPWgng1R9r7MUpSFWvfKgzVrl1RITUuGmSLISMNaOxoC0WoQAvD_BwE" target="_blank">Link Hyundai</a></p>
+    
+    <h2 id="Lambo">Aici vezi Lambo</h2>
+    <img src="Lamborghini_Urus.png" class="desc-image" alt="LAMBORGHINI Urus - Super SUV-ul italian, o combinație de lux și viteză." width="320" height="200">
+    <div class="description-container"></div> 
+
+    <ul></ul>
+    
+    <p>
+        <a href="https://www.lamborghini.com/en-en/models/urus/urus-se#val-ht" target="_blank">Link Lamborghini Urus Europa</a>
+        <br/>
+        <a href="https://preowned.lamborghini.com/en_gb/models/lamborghini-urus" target="_blank">Link Lamborghini Urus SUA</a>
+    </p>
+
+    <h1>Porsche</h1>
+    <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank"><img src="Porsche.png" alt="PORSCHE - Performanță și precizie germană." width="120" height="200"></a> 
+    
+    <script src="script.js"></script>
+</body>
 </html>
