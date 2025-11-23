@@ -1,0 +1,30 @@
+
+        /* Aici rămâne tot codul CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        ul li {
+            margin-bottom: 15
+            px;
+        }
+        .desc-image { 
+            margin: 15px 0;
+            cursor: pointer; 
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .description-container {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            display: none; 
+        }
