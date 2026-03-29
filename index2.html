@@ -1,39 +1,10 @@
-<!DOCTYPE html>
+all images should have the same dimensions<!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Masini</title>
-    <style>
-        /* Aici rămâne tot codul CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        ul li {
-            margin-bottom: 15px;
-        }
-        .desc-image { 
-            margin: 15px 0;
-            cursor: pointer; 
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .description-container {
-            margin-top: 5px;
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-            display: none; 
-        }
-    </style>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Hello words</h1>
@@ -45,42 +16,42 @@
         <li>Element lista 1</li>
         <li>Element lista 2</li>
         <li><a href="#Lambo"><span title="Apasa cu incredere pentru a vedea Lamborghini">Te duce la Lamborghini daca dai click</span></a></li>
+    <p class="titlu_masina"> BMW X5M</p>
     </ul>
 
-    <img src="BMW_X5.png" class="desc-image" width="320" height="200" alt="Imagine masina BMW X5 - SUV de lux, excelent pentru drumuri lungi.">
+    <img src="BMW_X5.png" class="desc-image uniform-img" alt="Imagine masina BMW X5 - SUV de lux, excelent pentru drumuri lungi.">
     <div class="description-container"></div> 
 
     <ul>
         <li>Element lista 1</li>
         <li>Element lista 2</li>
     </ul>
-
-    <img src="toyota.png" class="desc-image" width="320" height="200" alt="TOYOTA - Renumită pentru fiabilitate și eficiență.">
+<p class ="titlu_masina"> Toyota yaris GR</p>
+    <img src="toyota.png" class="desc-image uniform-img" alt="TOYOTA - Renumită pentru fiabilitate și eficiență.">
     <div class="description-container"></div> 
     
     <ul></ul>
-
-    <img src="2017-honda-civic-type-r-red.png" class="desc-image" width="320" height="200" alt="HONDA Civic Type R - Mașină sport de înaltă performanță.">
+<p class="titlu_masina"> Honda Civic Type R</p>
+    <img src="2017-honda-civic-type-r-red.png" class="desc-image uniform-img" alt="HONDA Civic Type R - Mașină sport de înaltă performanță.">
     <div class="description-container"></div> 
 
     <button>Click me HONDA!</button>
     
     <ul></ul>
-    
     <footer>
         <p>Acesta &copy; este un footer de test</p>
     </footer>
 
-    <h1>Hello Hyundai i30</h1>
+    <p class="titlu_masina">Hyundai i30</p>
     <ul></ul>
 
-    <img src="Hyndai.png" class="desc-image" width="320" height="200" alt="HYUNDAI - O marcă populară, oferind un raport bun calitate-preț.">
+    <img src="Hyndai.png" class="desc-image uniform-img" alt="HYUNDAI - O marcă populară, oferind un raport bun calitate-preț.">
     <div class="description-container"></div> 
 
     <p><a href="https://www.hyundai-motor.ro/?utm_source=google&utm_medium=cpc&utm_campaign=Search_ongoing_2024_RLSA_Generic&gad_source=1&gad_campaignid=1707659214&gbraid=0AAAAADvlyV0R1lyovT5stZhW7M3su1rYi&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUuhTfPGmsCrzgPWgng1R9r7MUpSFWvfKgzVrl1RITUuGmSLISMNaOxoC0WoQAvD_BwE" target="_blank">Link Hyundai</a></p>
     
     <h2 id="Lambo">Aici vezi Lambo</h2>
-    <img src="Lamborghini_Urus.png" class="desc-image" alt="LAMBORGHINI Urus - Super SUV-ul italian, o combinație de lux și viteză." width="320" height="200">
+    <img src="Lamborghini_Urus.png" class="desc-image uniform-img" alt="LAMBORGHINI Urus - Super SUV-ul italian, o combinație de lux și viteză.">
     <div class="description-container"></div> 
 
     <ul></ul>
@@ -91,9 +62,19 @@
         <a href="https://preowned.lamborghini.com/en_gb/models/lamborghini-urus" target="_blank">Link Lamborghini Urus SUA</a>
     </p>
 
-    <h1>Porsche</h1>
-    <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank"><img src="Porsche.png" alt="PORSCHE - Performanță și precizie germană." width="120" height="200"></a> 
-    
-    <script src="script.js"></script>
+    <p class="titlu_masina">Porsche</p>
+    <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank"><img src="Porsche.png" class="logo-img" alt="PORSCHE - Performanță și precizie germană."></a> 
+
+    <p class="titlu_masina">Bentley bentaiga</p>
+    <img src="Bentley.png" class="desc-image uniform-img" alt="BENTLEY Bentayga - Lux suprem și performanță.">
+    <div class="description-container"></div> 
+  <script src="script.js"></script>
+ 
+  <h3> The best car in the wold</h3>
+ 
+    <a href="https://www.ferrari.com/en-RO/auto/car-range?utm_source=google&utm_medium=cpc&utm_campaign=2024_ferrari_search_new_upperfunnel_FEA&utm_content=FEA_RO_brandkeywords&utm_term=ferrari&gad_source=1&gad_campaignid=17366544853&gbraid=0AAAAAon49ggQCc6T3IKNe7fX3y9LXLZj3&gclid=CjwKCAiA55rJBhByEiwAFkY1QMyyNjKDwPF4IudLNktJfriVD3iG0Hcme4-rSt3avWLuWGRmkhopFxoC3FIQAvD_BwE" target="_blank"> <img src="Ferrari_logo.png" class="logo-img" alt="Ferrari 812"> </a>
+
 </body>
+
+
 </html>
